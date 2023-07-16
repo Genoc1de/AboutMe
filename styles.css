@@ -132,6 +132,9 @@ body{
         align-items: center;
         justify-content: center;
     }
+    .nav{
+        text-align: center;
+    }
     .left-section{
         width: 80%;
         height: auto;
