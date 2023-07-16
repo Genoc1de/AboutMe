@@ -1,5 +1,5 @@
 body{
-    overflow: hidden;
+    
 }
 .bg-nude{
     color: #1a1818;
@@ -117,4 +117,33 @@ body{
 .nav-link:hover {
     box-shadow: inset 1000px 0 0 0 #000;
     color: #ece7e1;
+  }
+
+
+  @media (max-width: 1200px){
+
+  }
+  @media (max-width: 1000px){
+    .content{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .left-section{
+        width: 80%;
+        height: auto;
+    }
+    .right-section{
+        padding-top: 10vh;
+        height: auto;
+    }
+    .nav-link{
+        font-size: 16vw;
+    }
+  }
+  @media (max-width: 768px){
+
+  }
+  @media (max-width: 480px){
+    
   }
