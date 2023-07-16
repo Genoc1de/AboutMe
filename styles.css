@@ -13,7 +13,7 @@ body{
     padding-top: 5%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     position: fixed;
     width: 6%;
@@ -24,7 +24,6 @@ body{
     padding-left: 20px;
     padding-right: 15px;
     transform: rotate(-90deg);
-
 }
 .nav-left-link {
     color: #1a1818;
@@ -41,6 +40,15 @@ body{
     height: 60vh;
     background-color: #000;
     
+}
+.nav-left-copyright{
+    letter-spacing: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    padding-right: 300px;
+    transform: rotate(-90deg);
+}
 }
 .info-h1{
     text-transform: uppercase;
