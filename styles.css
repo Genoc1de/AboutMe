@@ -1,5 +1,5 @@
 body{
-    
+    overflow: hidden;
 }
 .bg-nude{
     color: #1a1818;
@@ -124,6 +124,9 @@ body{
 
   }
   @media (max-width: 1000px){
+    body{
+        overflow:visible;
+    }
     .content{
         flex-wrap: wrap;
         align-items: center;
