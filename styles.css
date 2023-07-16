@@ -49,6 +49,9 @@ body{
     font-weight: 500;
     text-decoration: none;
 }
+.nav-left-link-work:hover{
+    text-decoration: line-through;
+}
 .nav-left-line{
     width: 1px;
     height: 60vh;
