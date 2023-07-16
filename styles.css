@@ -58,6 +58,7 @@ body{
     color: #ece7e1;;
 }
 .content{
+    padding-top: 5%;
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -67,7 +68,6 @@ body{
 }
 
 .left-section{
-    padding-top: 5%;
     text-align: center;
     flex-direction: column;
     justify-content: center;
