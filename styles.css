@@ -1,14 +1,16 @@
 body{
-    
+    overflow: hidden;
 }
 .bg-nude{
     color: #1a1818;
     background-color: #ece7e1;
 }
 .bg-nude-work{
+
     color: #ece7e1;
     background-color: #1a1818;
 }
+
 
 .container{
     position: relative;
@@ -136,11 +138,11 @@ body{
     text-transform: uppercase;
     text-decoration: none;
     box-shadow: inset 0 0 0 0 #000;
-    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+    transition: color .8s ease-in-out, box-shadow .8s ease-in-out;
 }
 
 .nav-link:hover {
-    box-shadow: inset 1000px 0 0 0 #000;
+    box-shadow: inset 1200px 0 0 0 #000;
     color: #ece7e1;
   }
   .nav-link-work{
@@ -197,14 +199,15 @@ body{
   }
 
 .block-slide-down{
+    display: block;
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-color: #1a1818;
     z-index: 100;
-    animation: myAnim 1s ease-out 0s 1 normal forwards;
+    animation: myAnimBottom 1s ease-out 0s 1 normal forwards;
 }
-@keyframes myAnim {
+@keyframes myAnimBottom {
 	0% {
 		opacity: 1;
 		transform: translateY(0);
@@ -215,5 +218,34 @@ body{
 	100% {
 		opacity: 0;
 		transform: translateY(100vh);
+        display: none;
+        width: 100vw;
+        height: 0vh;
+	}
+}
+
+.block-slide-top{
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1a1818;
+    z-index: 100;
+    animation: myAnim 1s ease-out 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		opacity: 1;
+		transform: translateY(100%);
+        width: 100vw;
+	}
+    99%{
+        opacity: 1;
+    }
+	100% {
+		opacity: 0;
+		transform: translateY(0%);
+        display: none;
+        visibility: hidden;
 	}
 }
