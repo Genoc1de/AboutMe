@@ -90,6 +90,18 @@ body{
     font-size: 13pt;
     color: #ece7e1;
     z-index: -1;
+    animation: InfoTextAmin 1.4s ease 0s 1 normal forwards;
+}
+@keyframes InfoTextAmin {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 .content{
     padding-top: 5%;
@@ -127,6 +139,18 @@ body{
     display: flex;
     width: 80%;
     height: 70%;
+    animation: ContentAnim 3s ease 0s 1 normal forwards;
+}
+@keyframes ContentAnim {
+	0% {
+		opacity: 0;
+	}
+    80%{
+        opacity: 0.8;
+    }
+	100% {
+		opacity: 1;
+	}
 }
 .nav{
     text-align: left;
