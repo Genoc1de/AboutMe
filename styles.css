@@ -6,7 +6,7 @@ body{
     background-color: #ece7e1;
 }
 .bg-nude-work{
-
+    overflow: visible;
     color: #ece7e1;
     background-color: #1a1818;
 }
@@ -229,23 +229,23 @@ body{
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-color: #1a1818;
+    background-color: #ece7e1;
     z-index: 100;
     animation: myAnim 1s ease-out 0s 1 normal forwards;
 }
 @keyframes myAnim {
 	0% {
 		opacity: 1;
-		transform: translateY(100%);
-        width: 100vw;
+		transform: translateY(0);
 	}
     99%{
         opacity: 1;
     }
 	100% {
 		opacity: 0;
-		transform: translateY(0%);
+		transform: translateY(100vh);
         display: none;
-        visibility: hidden;
+        width: 100vw;
+        height: 0vh;
 	}
 }
