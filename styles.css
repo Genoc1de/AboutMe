@@ -139,17 +139,19 @@ body{
     display: flex;
     width: 80%;
     height: 70%;
-    animation: ContentAnim 3s ease 0s 1 normal forwards;
+    animation: ContentAnim 1s ease 0s 1 normal forwards;
 }
 @keyframes ContentAnim {
 	0% {
 		opacity: 0;
+        filter: blur(10px);
 	}
     80%{
         opacity: 0.8;
     }
 	100% {
 		opacity: 1;
+        filter: blur(0px);
 	}
 }
 .nav{
